@@ -1,0 +1,40 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ATLAS - Advanced Tracking and Logistics Asset System",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "cd frontend && npm run build",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && npm run lint",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "test:backend": "cd backend && npm test",
+    "start:prod": "cd backend && npm start"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "ATLAS Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atlas-team/atlas.git"
+  },
+  "keywords": [
+    "asset-management",
+    "inventory",
+    "tracking",
+    "logistics"
+  ]
+}

@@ -1,0 +1,14 @@
+/**
+ * Logger-Utility für das ATLAS-Backend
+ *
+ * Bietet einheitliche Logging-Funktionen für die gesamte Anwendung
+ */
+
+const logger = {
+  info: (...args) => console.log('[INFO]', ...args),
+  error: (...args) => console.error('[ERROR]', ...args),
+  warn: (...args) => console.warn('[WARN]', ...args),
+  debug: (...args) => console.debug('[DEBUG]', ...args)
+};
+
+module.exports = logger;

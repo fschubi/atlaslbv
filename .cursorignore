@@ -1,0 +1,15 @@
+
+node_modules/
+dist/
+.vite/
+build/
+uploads/
+*.log
+*.lock
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+.DS_Store
